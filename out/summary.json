@@ -1,0 +1,227 @@
+{
+  "complete_months": [
+    "2017-01",
+    "2017-02",
+    "2017-03",
+    "2017-04",
+    "2017-05",
+    "2017-06",
+    "2017-07",
+    "2017-08",
+    "2017-09",
+    "2017-10",
+    "2017-11",
+    "2017-12",
+    "2018-01",
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08"
+  ],
+  "n_complete_months": 20,
+  "n_definitions": 64,
+  "focal_month": "2018-08",
+  "focal_revenue": {
+    "month": "2018-08",
+    "n_defs": 64,
+    "min": 838576.6400000216,
+    "max": 1347360.600000003,
+    "mean": 1077247.8981250047,
+    "median": 1025771.7599999992,
+    "spread_pct": 47.22997936552406,
+    "ratio": 1.6067232686090185,
+    "lowest_def": "purchase|items|excl|delivered_only",
+    "highest_def": "delivered|items|incl|delivered_only"
+  },
+  "focal_aov": {
+    "month": "2018-08",
+    "n_defs": 64,
+    "min": 131.24790079852923,
+    "max": 162.05924945874463,
+    "mean": 151.6839696690598,
+    "median": 155.80187907063487,
+    "spread_pct": 20.31285753361994,
+    "ratio": 1.234756887331189,
+    "lowest_def": "purchase|items|excl|all",
+    "highest_def": "delivered|items|incl|delivered_only"
+  },
+  "spread_pct_median_across_months": 27.505434865836396,
+  "spread_pct_min": 18.169722479798864,
+  "spread_pct_max": 109.42743696866555,
+  "aov_spread_pct_median": 18.456592842240067,
+  "variance_shares_mean": {
+    "anchor": 0.3824467715639229,
+    "measure": 0.6024124500143304,
+    "status": 0.015140778421746683
+  },
+  "growth_variance_shares_mean": {
+    "anchor": 0.9625451037223061,
+    "measure": 0.01941808020858695,
+    "status": 0.018036816069106988
+  },
+  "conditional_robustness": [
+    {
+      "held_fixed": "(nothing)",
+      "level": "all 64 definitions",
+      "n_defs": 64,
+      "median_spread_pct": 27.505434865836396,
+      "n_flips": 8,
+      "n_pairs": 19,
+      "flip_pct": 42.10526315789474
+    },
+    {
+      "held_fixed": "anchor",
+      "level": "approved",
+      "n_defs": 16,
+      "median_spread_pct": 18.295379401961306,
+      "n_flips": 2,
+      "n_pairs": 19,
+      "flip_pct": 10.526315789473685
+    },
+    {
+      "held_fixed": "anchor",
+      "level": "carrier",
+      "n_defs": 16,
+      "median_spread_pct": 15.651806138861671,
+      "n_flips": 0,
+      "n_pairs": 19,
+      "flip_pct": 0.0
+    },
+    {
+      "held_fixed": "anchor",
+      "level": "delivered",
+      "n_defs": 16,
+      "median_spread_pct": 14.904537122371067,
+      "n_flips": 1,
+      "n_pairs": 19,
+      "flip_pct": 5.2631578947368425
+    },
+    {
+      "held_fixed": "anchor",
+      "level": "purchase",
+      "n_defs": 16,
+      "median_spread_pct": 18.606756920481665,
+      "n_flips": 1,
+      "n_pairs": 19,
+      "flip_pct": 5.2631578947368425
+    },
+    {
+      "held_fixed": "measure",
+      "level": "items only",
+      "n_defs": 16,
+      "median_spread_pct": 11.707081359318469,
+      "n_flips": 7,
+      "n_pairs": 19,
+      "flip_pct": 36.8421052631579
+    },
+    {
+      "held_fixed": "measure",
+      "level": "items+freight",
+      "n_defs": 16,
+      "median_spread_pct": 11.475577418046695,
+      "n_flips": 8,
+      "n_pairs": 19,
+      "flip_pct": 42.10526315789474
+    },
+    {
+      "held_fixed": "measure",
+      "level": "paid ex-voucher",
+      "n_defs": 16,
+      "median_spread_pct": 12.59666536617289,
+      "n_flips": 8,
+      "n_pairs": 19,
+      "flip_pct": 42.10526315789474
+    },
+    {
+      "held_fixed": "measure",
+      "level": "paid total",
+      "n_defs": 16,
+      "median_spread_pct": 12.095979333286373,
+      "n_flips": 8,
+      "n_pairs": 19,
+      "flip_pct": 42.10526315789474
+    },
+    {
+      "held_fixed": "status",
+      "level": "all",
+      "n_defs": 16,
+      "median_spread_pct": 27.196376467513463,
+      "n_flips": 8,
+      "n_pairs": 19,
+      "flip_pct": 42.10526315789474
+    },
+    {
+      "held_fixed": "status",
+      "level": "delivered_only",
+      "n_defs": 16,
+      "median_spread_pct": 24.265958576272816,
+      "n_flips": 8,
+      "n_pairs": 19,
+      "flip_pct": 42.10526315789474
+    },
+    {
+      "held_fixed": "status",
+      "level": "ex_canceled",
+      "n_defs": 16,
+      "median_spread_pct": 26.039086749239978,
+      "n_flips": 8,
+      "n_pairs": 19,
+      "flip_pct": 42.10526315789474
+    },
+    {
+      "held_fixed": "status",
+      "level": "ex_canceled_unavail",
+      "n_defs": 16,
+      "median_spread_pct": 25.342841605834757,
+      "n_flips": 8,
+      "n_pairs": 19,
+      "flip_pct": 42.10526315789474
+    }
+  ],
+  "explained_by_main_effects_mean": 1.0,
+  "n_month_pairs": 19,
+  "n_flips": 8,
+  "flip_pct": 42.10526315789473,
+  "flip_months": [
+    "2017-11",
+    "2017-12",
+    "2018-01",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08"
+  ],
+  "delivery_spread_pct_median": 61.50867888814126,
+  "delivery_focal_min_days": 3.623838765548765,
+  "delivery_focal_max_days": 7.658164068650606,
+  "repeat_rate": [
+    {
+      "def_id": "customer_id|all",
+      "n_customers": 99441,
+      "n_repeat": 0.0,
+      "repeat_rate_pct": 0.0
+    },
+    {
+      "def_id": "customer_id|ex_canceled_unavail",
+      "n_customers": 98207,
+      "n_repeat": 0.0,
+      "repeat_rate_pct": 0.0
+    },
+    {
+      "def_id": "customer_unique_id|all",
+      "n_customers": 96096,
+      "n_repeat": 2997.0,
+      "repeat_rate_pct": 3.118756243756244
+    },
+    {
+      "def_id": "customer_unique_id|ex_canceled_unavail",
+      "n_customers": 94990,
+      "n_repeat": 2888.0,
+      "repeat_rate_pct": 3.0403200336877565
+    }
+  ]
+}

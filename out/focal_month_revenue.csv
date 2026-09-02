@@ -1,0 +1,65 @@
+def_id,anchor,measure,status,revenue,n_orders
+purchase|items|excl|delivered_only,purchase,items only,delivered_only,838576.6400000216,6351
+purchase|items|excl|ex_canceled,purchase,items only,ex_canceled,848860.100000022,6428
+purchase|items|excl|ex_canceled_unavail,purchase,items only,ex_canceled_unavail,848860.100000022,6421
+purchase|items|excl|all,purchase,items only,all,854686.3300000223,6512
+approved|items|excl|delivered_only,approved,items only,delivered_only,862639.5400000223,6504
+approved|items|excl|ex_canceled,approved,items only,ex_canceled,873072.9000000228,6588
+approved|items|excl|ex_canceled_unavail,approved,items only,ex_canceled_unavail,873072.9000000228,6575
+approved|items|excl|all,approved,items only,all,878987.1300000229,6620
+carrier|items|excl|delivered_only,carrier,items only,delivered_only,953520.2300000244,7010
+carrier|items|excl|ex_canceled,carrier,items only,ex_canceled,961126.7900000248,7058
+carrier|items|excl|all,carrier,items only,all,961126.7900000248,7058
+carrier|items|excl|ex_canceled_unavail,carrier,items only,ex_canceled_unavail,961126.7900000248,7058
+purchase|payments|excl|delivered_only,purchase,paid ex-voucher,delivered_only,968135.4899999992,6351
+purchase|payments|excl|ex_canceled_unavail,purchase,paid ex-voucher,ex_canceled_unavail,979558.4999999988,6421
+purchase|payments|excl|ex_canceled,purchase,paid ex-voucher,ex_canceled,981166.499999999,6428
+purchase|payments|incl|delivered_only,purchase,paid total,delivered_only,985414.2799999992,6351
+purchase|items|incl|delivered_only,purchase,items+freight,delivered_only,985558.1599999996,6351
+purchase|payments|excl|all,purchase,paid ex-voucher,all,987456.1199999992,6512
+approved|payments|excl|delivered_only,approved,paid ex-voucher,delivered_only,996532.0899999994,6504
+purchase|payments|incl|ex_canceled_unavail,purchase,paid total,ex_canceled_unavail,996896.149999999,6421
+purchase|items|incl|ex_canceled,purchase,items+freight,ex_canceled,997040.0299999992,6428
+purchase|items|incl|ex_canceled_unavail,purchase,items+freight,ex_canceled_unavail,997040.0299999992,6421
+purchase|payments|incl|ex_canceled,purchase,paid total,ex_canceled,998504.1499999987,6428
+purchase|items|incl|all,purchase,items+freight,all,1003374.9899999992,6512
+approved|payments|excl|ex_canceled_unavail,approved,paid ex-voucher,ex_canceled_unavail,1008122.9799999992,6575
+approved|payments|excl|ex_canceled,approved,paid ex-voucher,ex_canceled,1011505.1299999992,6588
+approved|payments|incl|delivered_only,approved,paid total,delivered_only,1013978.1399999995,6504
+approved|items|incl|delivered_only,approved,items+freight,delivered_only,1014122.0099999995,6504
+approved|payments|excl|all,approved,paid ex-voucher,all,1017898.469999999,6620
+purchase|payments|incl|all,purchase,paid total,all,1022425.3199999988,6512
+approved|payments|incl|ex_canceled_unavail,approved,paid total,ex_canceled_unavail,1025627.8899999992,6575
+approved|items|incl|ex_canceled,approved,items+freight,ex_canceled,1025771.7599999992,6588
+approved|items|incl|ex_canceled_unavail,approved,items+freight,ex_canceled_unavail,1025771.7599999992,6575
+approved|payments|incl|ex_canceled,approved,paid total,ex_canceled,1029010.0399999988,6588
+approved|items|incl|all,approved,items+freight,all,1032210.4399999988,6620
+approved|payments|incl|all,approved,paid total,all,1035448.7199999986,6620
+carrier|payments|excl|delivered_only,carrier,paid ex-voucher,delivered_only,1101608.0300000005,7010
+carrier|payments|excl|ex_canceled_unavail,carrier,paid ex-voucher,ex_canceled_unavail,1110005.1599999997,7058
+carrier|payments|excl|ex_canceled,carrier,paid ex-voucher,ex_canceled,1110005.1599999997,7058
+carrier|payments|excl|all,carrier,paid ex-voucher,all,1110005.1599999997,7058
+carrier|payments|incl|delivered_only,carrier,paid total,delivered_only,1120792.929999999,7010
+carrier|items|incl|delivered_only,carrier,items+freight,delivered_only,1120936.799999999,7010
+carrier|payments|incl|all,carrier,paid total,all,1129248.9199999983,7058
+carrier|payments|incl|ex_canceled,carrier,paid total,ex_canceled,1129248.9199999983,7058
+carrier|payments|incl|ex_canceled_unavail,carrier,paid total,ex_canceled_unavail,1129248.9199999983,7058
+carrier|items|incl|all,carrier,items+freight,all,1129392.7899999986,7058
+carrier|items|incl|ex_canceled,carrier,items+freight,ex_canceled,1129392.7899999986,7058
+carrier|items|incl|ex_canceled_unavail,carrier,items+freight,ex_canceled_unavail,1129392.7899999986,7058
+delivered|items|excl|all,delivered,items only,all,1141791.540000007,8314
+delivered|items|excl|ex_canceled,delivered,items only,ex_canceled,1141791.540000007,8314
+delivered|items|excl|delivered_only,delivered,items only,delivered_only,1141791.540000007,8314
+delivered|items|excl|ex_canceled_unavail,delivered,items only,ex_canceled_unavail,1141791.540000007,8314
+delivered|payments|excl|ex_canceled_unavail,delivered,paid ex-voucher,ex_canceled_unavail,1323721.5600000026,8314
+delivered|payments|excl|delivered_only,delivered,paid ex-voucher,delivered_only,1323721.5600000026,8314
+delivered|payments|excl|ex_canceled,delivered,paid ex-voucher,ex_canceled,1323721.5600000026,8314
+delivered|payments|excl|all,delivered,paid ex-voucher,all,1323721.5600000026,8314
+delivered|payments|incl|delivered_only,delivered,paid total,delivered_only,1347216.730000003,8314
+delivered|payments|incl|ex_canceled_unavail,delivered,paid total,ex_canceled_unavail,1347216.730000003,8314
+delivered|payments|incl|all,delivered,paid total,all,1347216.730000003,8314
+delivered|payments|incl|ex_canceled,delivered,paid total,ex_canceled,1347216.730000003,8314
+delivered|items|incl|ex_canceled,delivered,items+freight,ex_canceled,1347360.600000003,8314
+delivered|items|incl|all,delivered,items+freight,all,1347360.600000003,8314
+delivered|items|incl|ex_canceled_unavail,delivered,items+freight,ex_canceled_unavail,1347360.600000003,8314
+delivered|items|incl|delivered_only,delivered,items+freight,delivered_only,1347360.600000003,8314

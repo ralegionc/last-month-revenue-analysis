@@ -1,0 +1,5 @@
+n_customers,n_repeat,repeat_rate_pct,def_id,key,key_label,scope
+99441,0.0,0.0,customer_id|all,customer_id,Per-order customer_id,all
+98207,0.0,0.0,customer_id|ex_canceled_unavail,customer_id,Per-order customer_id,ex_canceled_unavail
+96096,2997.0,3.118756243756244,customer_unique_id|all,customer_unique_id,Person-level customer_unique_id,all
+94990,2888.0,3.0403200336877565,customer_unique_id|ex_canceled_unavail,customer_unique_id,Person-level customer_unique_id,ex_canceled_unavail
