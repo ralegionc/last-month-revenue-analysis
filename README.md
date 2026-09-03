@@ -209,4 +209,4 @@ August 2018.
 
 ## License
 
-Not yet chosen. MIT would be consistent with the rest of these repositories.
+MIT. See [LICENSE](LICENSE).
