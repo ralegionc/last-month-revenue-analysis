@@ -8,8 +8,9 @@ explanation is that someone made a mistake. Usually nobody did. Each of them
 picked a defensible answer to the same three questions, and the questions have no
 canonical answers.
 
-Which timestamp assigns an order to a month? Does revenue include freight? Do
-cancelled orders count?
+Which timestamp assigns an order to a month? Is revenue the item prices, with or
+without freight, or what customers paid, with or without vouchers? Which order
+statuses count?
 
 This project enumerates 64 defensible combinations of those choices, computes all
 of them over the same 99,441 orders, and measures what the disagreement does to
@@ -22,14 +23,17 @@ comparisons contain a contradiction**: one defensible definition says the busine
 grew, another says it shrank, over the same period.
 
 **One change fixes almost all of it.** Standardise the period anchor and
-contradicted month-pairs fall from 42% to 5%. Standardise the freight policy, the
-argument teams actually have, and it falls from 42% to 41%.
+contradicted month-pairs fall from 8 of 19 (42%) to between 0 and 2, depending on
+the anchor, and to 1 of 19 (5%) on the purchase anchor recommended below.
+Standardise the revenue measure instead, which is where the freight argument teams
+actually have lives, and 7 or 8 contradictions remain (37% to 42%). Standardising
+the status scope leaves all 8.
 
 ```
 $ make
 
   dataset          Olist Brazilian e-commerce, 99,441 orders, Jan 2017 - Aug 2018
-  definitions      64 admissible  (4 anchors x 2 measures x 2 freight x 2 status)
+  definitions      64 admissible  (4 anchors x 4 measures x 4 status scopes)
   months           20 complete
 
   focal month 2018-08
@@ -63,8 +67,9 @@ definitional question into a decision-quality problem.
 **The variance decomposition inverts between level and growth.** The revenue
 measure drives 60% of variance in the level and 2% in growth. The period anchor
 drives 38% of the level and **96%** of growth. Teams argue about freight because
-it visibly moves the headline number. It is almost the only choice that does not
-matter for the comparison anyone is actually making.
+it visibly moves the headline number, yet the revenue measure, the dimension
+freight belongs to, explains under 2% of the disagreement about growth, the
+comparison anyone is actually making.
 
 **The mechanism is legible.** Freight is a roughly constant 14% of gross every
 month, so including it scales the level and leaves the growth rate alone. The
@@ -110,14 +115,17 @@ enforce it, naming both the decision and the alternatives it rejects.
 
 ## The definition grid
 
-64 combinations across four dimensions.
+64 combinations across three dimensions, four options each.
 
 | Dimension | Options |
 |---|---|
-| Period anchor | purchase, approval, carrier handoff, delivery |
-| Measure | line items, payments |
-| Freight | included, excluded |
-| Status scope | all orders, delivered only |
+| Period anchor | purchase, payment approval, carrier handoff, delivery |
+| Revenue measure | line items excluding freight, line items including freight, payments counting vouchers, payments excluding vouchers |
+| Status scope | all orders, excluding cancelled, excluding cancelled and unavailable, delivered only |
+
+Freight and vouchers are not separate dimensions. Freight can only be toggled on
+line items and vouchers only on payment records, because a payment amount cannot
+be split into product and freight. Each source therefore contributes two measures.
 
 Each is computed over all 20 complete months, giving a full grid rather than a
 sample of it, which is what makes the variance decomposition exact rather than
